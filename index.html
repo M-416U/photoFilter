@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Filters</title>
+  </head>
+  <body>
+    <div class="p">
+      <p>Photo Editor (Filters) With JavaScript</p>
+    </div>
+    <div class="container">
+      <div class="image-side">
+        <div class="image">
+          <canvas></canvas>
+          <img id="mImg" />
+        </div>
+        <div class="upload">
+          <label for="up">Upload</label>
+          <input type="file" id="up" />
+        </div>
+      </div>
+      <div class="filter-side">
+        <ul>
+          <li>
+            <label for="f1">Blur</label>
+            <input type="range" id="f1" step="0.1" min="0" max="10" value="0" />
+          </li>
+          <li>
+            <label for="f2">Brightness</label>
+            <input type="range" id="f2" min="0" max="200" value="100" />
+          </li>
+          <li>
+            <label for="f3">Contrast</label>
+            <input type="range" id="f3" min="0" max="200" value="100" />
+          </li>
+          <li>
+            <label for="f4">Grayscale</label>
+            <input type="range" id="f4" step="0.1" min="0" max="1" value="0" />
+          </li>
+          <li>
+            <label for="f5">Hue Rotate</label>
+            <input type="range" id="f5" min="0" max="350" value="0" />
+          </li>
+          <li>
+            <label for="f6">Saturate</label>
+            <input type="range" id="f6" min="0" max="200" value="100" />
+          </li>
+          <li>
+            <label for="f7">Sepia</label>
+            <input type="range" id="f7" min="0" max="200" value="0" />
+          </li>
+          <li>
+            <p onclick="reset()">Reset</p>
+            <a href="#" download="image" id="donV">Download</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
